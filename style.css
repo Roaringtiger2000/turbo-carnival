@@ -1,0 +1,458 @@
+body {
+	background-image: url('flags.png');
+	background-width: 50%;
+	width: 100%;
+	color: white;
+	font-family: 'Oswald', sans-serif;
+}
+
+.thenation {
+	font-size: 40px;
+	color: black;
+	font-family: 'Comic Neue', cursive;
+}
+
+.thehead {
+	background-color: #ccd3ed;
+}	
+
+marquee {
+	font-size: 70px;
+	padding: 15px;
+}
+
+th {
+	color: black;
+	text-align: center;
+	vertical-align: middle;
+	height: 100px;
+	width: 300px;
+}
+
+.uppercase {
+	text-transform: uppercase;
+	font-size: 24px;
+	font-family: 'Oswald', sans-serif;
+	text-decoration: underline;
+}
+
+table {
+	text-align: center;
+	margin: 30px auto;
+	color: black;	
+}
+
+td {
+	color: black;
+	text-align: center;
+	vertical-align: middle;
+	height: 100px;
+	width: 300px;
+}
+
+footer h3 {
+	display: inline-block;
+	font-size: 14px;
+	background-color: #242f44;
+}
+
+.tabledimensions {
+	max-width: 940px;
+	margin: 0 auto;
+	height: 1200px;
+}
+
+h1:hover {
+	color: blue;
+}
+
+.thetitle {
+	text-align: center;
+	text-shadow: 2px 0 0 black,0 2px 0 black,-2px 0 0 black,0 -2px 0 black;
+	padding-top: 0px;
+}
+
+.sidenav {
+	top: 0;
+	right: 0;
+	background-image:linear-gradient(to left top, #ffda8a, #f08cff, #bebdff);
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	overflow-x: hidden;
+	transition: 0.5s;
+	padding-top: 20px;
+}
+
+.sidenav a {
+	padding: 8px 8px 8px 32px;
+	font-size: 25px;
+	color: #FFFFFF;
+	display: block;
+	transition: 0.3s;
+}
+
+.sidenav .closebtn {
+	position: absolute;
+	top: 1px;
+	right: 15px;
+	font-size: 50px;
+	margin-left: 20px;
+}
+
+.sidenav a:hover {
+	color: #000000;
+}
+
+@media screen and (max-height: 450px) {
+	.sidenav a {font-size: 18px;}
+}
+
+.main {
+  transition: margin-left .5s;
+}
+
+.white {
+	background-color: white;
+	width: 100%;
+	height: 200%;
+	padding-top: 9px;
+	padding-bottom: 60px;
+}	
+
+.canada a:hover {
+	background: -webkit-linear-gradient(red, white);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.rowcanada {
+	background-color: #defeff;
+	font-size: 18px;
+	font-family: 'Anek Bangla', sans-serif;
+}
+
+.rowcanada:hover {
+	background-color: #ddd;
+}
+
+.rowunitedstates {
+	font-size: 18px;
+	font-family: 'Anek Bangla', sans-serif;
+}
+
+.usa a:hover {
+	background: -webkit-linear-gradient(red, white, blue);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.rowunitedstates:hover {
+	background-color: #ddd;
+}
+
+.india a:hover {
+	background: -webkit-linear-gradient(orange, white, green);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.rowindia {
+	background-color: #defeff;
+	font-size: 18px;
+	font-family: 'Anek Bangla', sans-serif;
+}
+
+.rowindia:hover {
+	background-color: #ddd;
+}
+
+.rowaustralia {
+	font-size: 18px;
+	font-family: 'Anek Bangla', sans-serif;
+}
+
+.australia a:hover {
+	background: -webkit-linear-gradient(blue, white, red);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.rowaustralia:hover {
+	background-color: #ddd;
+}
+
+.brazil a:hover {
+	background: -webkit-linear-gradient(green, blue, yellow, white);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.rowbrazil {
+	background-color: #defeff;
+	font-size: 18px;
+	font-family: 'Anek Bangla', sans-serif;
+}
+
+.tablelast {
+	background-color: #f4d9ff;
+	font-family: 'Handlee', cursive;
+	font-size: 20px;
+}
+
+.tablelastend {
+	background-color: #f4d9ff;
+	font-family: 'Handlee', cursive;
+	font-size: 17px;
+}
+
+.rowbrazil:hover {
+	background-color: #ddd;
+}
+
+.taiwan a:hover {
+	background: -webkit-linear-gradient(blue, white, red);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.rowtaiwan:hover {
+	background-color: #ddd;
+}
+
+.rowtaiwan {
+	font-size: 18px;
+	font-family: 'Anek Bangla', sans-serif;
+}
+
+.rowromania {
+	background-color: #defeff;
+	border-top: 2.5px solid #cacfcc;
+	border-bottom: 2.5px solid #cacfcc;
+	font-size: 18px;
+	font-family: 'Anek Bangla', sans-serif;
+}
+
+.dropdown {
+	position: relative;
+	display: inline-block;
+	
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	left: 100px;
+	background-color: black;
+	min-width: 160px;
+	<!-- Shadow of the element -->
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	<!-- Overlaps normal page content -->
+	z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+.desc {
+	padding: 15px;
+	text-align: center;
+	color: white;
+}			
+
+.romania a:hover {
+	background: -webkit-linear-gradient(red, yellow, blue);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.chad a:hover {
+	background: -webkit-linear-gradient(red, yellow, blue);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.rowchad {
+	font-size: 18px;
+	font-family: 'Anek Bangla', sans-serif;
+}
+
+.learnmore {
+	padding-top: 15px;
+	font-size: 17px;
+}
+
+.borders {
+	border: 2.5px ridge black;
+}
+
+.countrylink:hover {
+	color: #0036ff;
+}
+
+.textdecoration {
+	text-decoration: none;
+}
+
+.whiteform {
+	background-color: #fcfcfc;
+	width: 100%;
+	height: 600px;
+	padding-bottom: 5px;
+	padding-top: 30px;	
+}
+
+.whiteform1 {
+	background-color: #fcfcfc;
+	width: 100%;
+	height: 345px;
+	padding-bottom: 20px;
+	padding-top: 60px;
+}
+
+.formtitle {
+	color: blue;
+	font-size: 40px;
+	font-family: 'Comic Neue', cursive;
+	padding-left: 52px;
+
+}
+
+.formintro {
+	color: blue;
+	padding-top: 8px;
+	font-size: 20px;
+	font-family: 'Comic Neue', cursive;
+	padding-left: 52px;
+	padding-bottom: 10px;
+	padding-right: 10px;
+
+}
+
+.formintro1 {
+	color: blue;
+	font-size: 20px;
+	font-family: 'Comic Neue', cursive;
+	padding-left: 52px;
+	
+}
+
+.formintro5 {
+	color: blue;
+	font-size: 20px;
+	font-family: 'Comic Neue', cursive;
+	padding-left: 75px;
+	
+}
+
+.formintroduction {
+	color: blue;
+	font-size: 17px;
+	font-family: 'Comic Neue', cursive;
+	padding-left: 52px;
+	padding-bottom: 5px;
+}
+
+.formintroduction1 {
+	color: blue;
+	font-size: 17px;
+	font-family: 'Comic Neue', cursive;
+	padding-left: 52px;
+	padding-bottom: 10px;
+	padding-top: 10px;
+}
+
+.formintroduction2 {
+	color: blue;
+	font-size: 17px;
+	font-family: 'Comic Neue', cursive;
+	padding-top: 10px;
+}
+
+.formintroduction4 {
+	color: blue;
+	font-size: 17px;
+	font-family: 'Comic Neue', cursive;
+	padding-left: 52px;
+	padding-top: 20px;
+}
+
+.formintroduction3 {
+	color: blue;
+	font-size: 17px;
+	font-family: 'Comic Neue', cursive;
+	padding-top: 20px;
+}
+
+.askcheckbox {
+	color: blue;
+	font-size: 17px;
+	font-family: 'Comic Neue', cursive;
+	padding-left: 52px;
+	padding-top: 0px;
+	padding-bottom: 3px;
+
+}
+
+.radiobutton {
+	color: blue;
+	font-size: 17px;
+	font-family: 'Comic Neue', cursive;
+	padding-left: 52px;
+	padding-top: 0px;
+	padding-bottom: 3px;
+}
+
+.submitbutton {
+	border: double;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-square;
+	font-size: 16px;
+	margin: 4px 2px;
+	border-radius: 0px;
+	margin-left: 52px;
+	background-color: blue;
+	border: none;
+	color: white;
+	width: 16%;
+	margin-top: 20px;
+}
+
+
+.roboticbutton {
+	border-radius: 0px;
+	margin-left: 52px;
+	background-color: blue;
+	padding-left: 0px;
+	border: none;
+	color: white;
+	width: 16%;
+	margin-top: 20px;
+	font-family: 'Comic Neue', cursive;
+	font-size: 20px;
+	text-decoration: none;
+}
+
+.roboticbutton {
+	text-decoration: underline;
+	cursor:pointer;
+}
+
+.submitbutton:hover {
+	color: white;
+	cursor:pointer;
+	width: 18%;
+}
+
+
+
+.textaligning {
+	text-align: right;
+	padding-right: 30px;
+}

@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+  
+	<head>
+    
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		
+		
+		
+    
+<!--The Upper Tab Title -->
+		<title>Delving Into Robotics | Home</title>
+		
+		
+		
+		
+		
+    
+<!--The Favicon at the top of the page-->
+		<link rel="icon" type="image/x-icon" href="data:image/png;base64,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"/>
+    
+	
+	
+	
+	
+	
+<!--Link to style sheet (CSS) & Google Fonts-->
+		<link href="style.css" rel="stylesheet" type="text/css" />
+		<link href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple" rel="stylesheet" />
+		<link href="https://fonts.googleapis.com/css?family=Fauna+One&effect=outline" rel="stylesheet" />
+		<link href="https://fonts.googleapis.com/css2?family=Caveat" rel="stylesheet" />
+		<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet" />
+		<link href="https://fonts.googleapis.com/css2?family=Tangerine&display=swap" rel="stylesheet" />
+		<link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap" rel="stylesheet" />
+    
+	
+	
+	
+		<style>
+      
+			body {
+				background-image: linear-gradient(to left, #F59EA9,#BCF7F5);
+			}
+			  
+			.sidenav {
+				height: 100%;
+				width: 0;
+				position: fixed;
+				z-index: 1;
+				top: 0;
+				left: 0;
+				background-image: linear-gradient(to left, #E5CCFF, #CCE5FF);
+				overflow-x: hidden;
+				transition: 0.5s;
+				padding-top: 20px;
+			 }
+			  
+			.sidenav a {
+				padding: 8px 8px 8px 32px;
+				font-size: 25px;
+				color: #FFFFFF;
+				display: block;
+				transition: 0.3s;
+			}
+			  
+			.sidenav a:hover {
+				color: #000000;
+			}
+			  
+			.sidenav .closebtn {
+				position: absolute;
+				top: 0;
+				right: 25px;
+				font-size: 36px;
+				margin-left: 50px;
+			}
+		  
+			@media screen and (max-height: 450px) {
+				.sidenav {padding-top: 15px;}
+				.sidenav a {font-size: 18px;}
+			}
+		  
+			.red:hover {
+				color: #FF0000; 
+			}
+			  
+			.green:hover {
+				color: #05821e; 
+			}
+			  
+			.orange:hover {
+				color: #ff7300; 
+			}
+		  
+			.purple:hover {
+				color: #d605ed; 
+			}
+
+			.end {
+				background:lightskyblue;   
+				border-style: double;
+				border-color: lightskyblue;
+				background-size: 32px 10px;
+				border-radius: 15px;
+				width: 1200px;
+				height: 670px;
+			}
+		 
+			.img {
+				background: #eaeaed;
+				border: 1px solid #9799a7;
+				float: left;
+				height: 520px;
+				width: 550px;
+				border-radius: 15px;
+				margin-right: 3px;
+			}
+		  
+			.button {
+				background-color: #bfbaff;
+				border: none;
+				color: #c9eef2;
+				padding: 15px 32px;
+				text-align: center;
+				display: inline-square;
+				font-size: 16px;
+				margin: 4px 2px;
+				border-radius: 25px;
+				font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+			}
+		  
+			.submitbutton {
+				background-color: #ff8585;
+				border: double;
+				color: #c9eef2;
+				padding: 15px 32px;
+				text-align: center;
+				text-decoration: none;
+				display: inline-square;
+				font-size: 16px;
+				margin: 4px 2px;
+			}
+			  
+			.submitbutton:hover {
+				color: #000000; 
+			}
+		  
+			.content {
+				font-family: papyrus, fantasy;
+			}
+
+			.heading {
+				font-family: "Sofia", sans-serif;
+				margin: 0px 5px;
+				font-size: 30px;
+			}
+
+			.goodbye {
+				font-family: 'Caveat', cursive;
+			}
+
+			.closing {
+				height: 200px;
+				width: 200px;
+			}
+
+			.see {
+				color: blue;
+			}
+
+			.copyright {
+				text-align: center;
+				color: mediumvioletred;
+				font-family: 'Tangerine', cursive;
+				font-size: 40px;
+			}
+
+			.normal {
+				font-family:'Gloria Hallelujah', cursive;
+			}
+
+			.embed {
+				width: 50%;
+				margin: 0 auto; 
+				float: left;
+				margin-right: 20px;
+			}
+
+			.photo1 {
+				border: dotted;
+				border-color: coral;
+			}
+			  
+		</style>
+    
+	
+																						<!--[if gte mso 9]><xml>
+																						<mso:CustomDocumentProperties>
+																						<mso:Attachment msdt:dt="string">1</mso:Attachment>
+																						</mso:CustomDocumentProperties>
+																						</xml><![endif]-->
+	</head>
+
+    
+	
+	
+	<body>
+
+<!--Nav Bar-->    
+		<div id="mySidenav" class="sidenav">
+		
+			<!--Closed Button - with no text decoration, so NO Underline - cleaner look in my opinion-->
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="text-decoration:none">&times;</a>
+			
+			
+		 
+			<!--Link to various internal anchors on the page-->
+			<a href="#past" style="text-decoration:none">Past</a>
+			<a href="#present" style="text-decoration:none">Present</a>
+			<a href="#future" style="text-decoration:none">Future</a>
+			<a href="#tipstrick" style="text-decoration:none">Tips & Tricks</a>
+    
+		</div>
+    
+		<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+   
+	
+	
+    
+      
+<!--Title-->
+		<section>
+			<header>
+			
+				<h1 style="color:blue; font-family: 'Courier New', monospace; text-align:center; font-size:375%; text-shadow: 4px 4px 4px #aaa;">Delving Into Robotics</h1>
+				<h2 id="TipsTrick" style="font-family: Garamond, serif; text-align:center; color:#29A9FF;">Brought to you by the Association for the Development of Cyborgs</h2>
+				<a href="https://www.youtube.com/watch?v=fn3KWM1kuAw" target="_blank"><img src="https://www.iotworldtoday.com/files/2020/05/GettyImages-1184804468-789x432.jpg" alt="An image of a robot" style="display: block; margin-left: auto; margin-right: auto; width: 50%; border: dotted 5px; border-color: blue"/></a>
+				<br />
+				<p>Welcome to the Robotics Index, a page dedicated to <i style="color:blue; font-family: 'Times New Roman', serif;">promoting, enhancing, and delivering</i> robotics <b>education</b> in our world.</p>
+				<p>👇Please choose which topic of exploration you would like to view👇</p> 
+				
+			</header>
+		</section>
+
+
+
+    
+<!--Section 1: Topics of Discussion-->  
+		<section>
+	
+			<a href="#past" style="color:blue; font-family: 'Georgia', monospace;">
+				<ul class="orange" type="square">
+					<li>Machine Learning Updates From The Past</li>
+				</ul> 
+			</a>
+		
+			<a href="#present" style="color:blue; font-family: 'Georgia', monospace;">
+				<ul class="red" type="square">
+					<li>Revolutionary Discovery Happening Now</li>
+				</ul> 
+			</a>
+			
+			<a href="#future" style="color:blue; font-family: 'Georgia', monospace;">
+				<ul class="green" type="square">
+					<li>Future Technology</li>
+				</ul> 
+			</a>
+			
+			<a href="#tipstrick" style="color:blue; font-family: 'Georgia', monospace;">
+				<ul class="purple" type="square">
+					<li>Tips & Tricks</li>
+				</ul> 
+			</a>
+     
+		</section>
+
+
+
+
+    
+<!--Section 2: Updates From The Past -->
+
+		<section id="past">
+      
+			<h2 style="color:blue; font-family: 'Kaushan Script', cursive; monospace; text-align:center; font-size:200%"><b>Past Developments In Machine Learning</b></h2>
+			<iframe width="600" height="500" src="https://www.youtube.com/embed/uoC2ZGRI8a8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="embed"></iframe>
+			<p class="normal">Robotics is an interesting field, as a flashpoint in between the diverse worlds of technology and engineering. Over time, robots have gotten much more advanced, and are now incredibly intricate machines which are already revolutionizing the way we conduct our lives. From medicine to construction, the possibilities are endless.🤖</p>
+			<p class="normal">Feel free to check out this <a href="https://cs.stanford.edu/people/eroberts/courses/soco/projects/1998-99/robotics/history.html" target="_blank"><b>interesting article</b></a> on the past of robotics.</p>
+			<p class="normal">As a substitute for human actions​, the development of robots must be done with the best intentions in mind, and subject to exhaustive tests, especially when a matter of life and death is in a machine's hand. Otherwise, the consequences may be DISASTROUS! Yet, the benefits are tremendous, and can prolong human life, eliminate back-breaking tasks in which labours suffer, and reduce human error. So far, it has been developed in this way. Or so we <i>believe</i> 👀! One can hope this is not the case.</p>   
+			<p class="normal">Check out more on the father of robotics, <a href="https://www.automate.org/a3-content/joseph-engelberger-about">Joseph Engelberger</a>!</p>
+			<br /><br /><br /><br /><br /><br /><br /><br />
+			
+		</section>
+		
+		
+		
+		
+
+    
+<!--Section 3: Where We Are -->
+		<section id="present">
+		
+			<iframe title="vimeo-player" src="https://player.vimeo.com/video/522081133?h=5c4eb84372" width="700" height="500" frameborder="0" allowfullscreen style="float:left; margin-right: 20px;"></iframe>
+			<h2 style="color:blue; font-family: 'Kaushan Script', cursive; monospace; text-align:center; font-size:200%"><b>Our Current Status</b></h2>
+			<p class="normal">Right now, for students, there are a number of various opportunities available, such as the NVSD's <a href="https://www.sd44.ca/ProgramsServices/Academies/Robotics,%20Mechatronics%20&%20Digital%20Fabrication/Pages/default.aspx#/=" target="_blank">Robotics Academy</a>, a great place for students to learn. Check out the embedded <b>trailor video</b> 👈 !</p>
+			<h3 class="normal">Check out this excerpt from the <a href="https://science.jrank.org/pages/5897/Robotics-Robots-at-work-present-day.html" target="_blank">JRank Science & Philosophy Blog</a>!</h3>
+			<p class="normal"><b>"</b><i>Robots have come to play a widespread and crucial role in many industrial operations today. These robots are almost always of the Jacquard type—with few human features—rather than the Jacquet-Droz, doll-like style. The work that robots do can be classified into three major categories: in the assembly and finishing of products; in the movement of materials and objects; and in the performance of work in environmentally difficult or hazardous situations. The most common single application of robots is in welding. About a quarter of all robots used by industry have this function</i><b>"</b></p>
+				
+		</section>
+		
+		
+		
+		
+		
+		
+<!--Section 4: Looking Ahead -->
+		<section id="future">
+
+			<h2 style="color:blue; font-family: 'Kaushan Script', cursive; monospace; text-align:center; font-size:200%"><b>Delving Into The Future</b></h2>
+			<a><img src="https://www.iaasiaonline.com/wp-content/uploads/Controlling-Robotic-Arms.jpg" alt="robotic arm" style="float:right" class="photo1" /></a>
+			<p class="normal"> In the medical field, there is the possibility for <i>advanced robotic arms</i> to assist surgeons in even greater capacity then they do today. For example, would a robot be able to assess a patient, and then outline a treatment plan based on the certain characteristics it diagnoses, even going so far as to <b>conduct the surgical procedure autonomously</b>? Could this be done with little to <u style="font-size:20px;">NO</u> human oversight? These are all questions we must ponder as robotics infiltrates into our daily lives, and brings with it an increasingly <a href="https://mitadmissions.org/blogs/entry/what-a-robotics-career-looks-like/" target="_blank">diverse range of skilled jobs,</a> from programmers to design these wonders of man, to h​ardware specialists who choose specific materials in order to gain the best results🧪.</p>
+			<br />
+			<br />
+			
+		</section>
+
+
+
+
+
+<!--Section 5: Tips & Tricks -->
+		<section id="tipstrick">
+
+			<h2 style="color:blue; font-family: 'Kaushan Script', cursive; monospace; text-align:center; font-size:200%"><b>Tips & Tricks</b></h2>
+			<a href="https://www.robotshop.com/community/blog/show/10-tips-for-getting-started-with-robotics" target="_blank"><img src="https://safebytes.com/wp-content/uploads/2017/02/636022816352529020.jpg" alt="tips and tricks" style="float:left; margin-right: 30px; border: double; border-color: skyblue; height: 470px; width: 500px;"/></a>
+			<ol>
+				<li class="normal" style="font-size: 20px;"><p>Make sure your robot is needed.</p></li>
+				<li class="normal" style="font-size: 20px;"><p>Leverage open-source software.</p></li>
+				<li class="normal" style="font-size: 20px;"><p>Start with the software, then build the robot.</p></li>
+				<li class="normal" style="font-size: 20px;"><p>Simulation doesn’t compare to the real world.</p></li>
+				<li class="normal" style="font-size: 20px;"><p>Cloud services are your friend.</p></li>
+				<li class="normal" style="font-size: 20px;"><p>Be a part of the robotics community.</p></li>
+			</ol>
+			<p class="normal">The above tips are from <a href="https://www.therobotreport.com/5-robotics-development-tips/" target="_blank">The RobotReport.</a> If you would like to check out the details, feel free to do so.</p>
+			<p class="normal"><u><b>Bonus Tip:</b></u> Have Fun!</p>
+			<br />
+			<br />
+			
+		</section>
+    
+
+
+
+
+<!--The Bottom Of The Page -->
+
+		<footer class="end">
+      
+			<section>
+				<div class="heading">
+					<h1 class="font-effect-outline">TALK TO US - Let us know what you think!</h1>
+				</div>
+				
+				<span style="padding-right:3px; padding-top: 3px;">
+					<img class="img" src="https://www.itexchangeweb.com/blog/wp-content/uploads/2017/03/AI.jpg" alt="Robot holding up sign"/>
+				</span>
+			
+				<form method="post" action="https://rb.gy/aywyqw" target="_blank">
+				
+				
+					<div class="content">
+						<h3 style="font-family: 'Courier New', monospace; text-align:center;">What robotics era(s) would you like to learn about?</h3>
+						
+						
+						<label for="weekly"><input id="weekly" type="radio" name="weekly-monthly" value="Weekly" />Weekly</label>
+						<label for="monthly"><input id="monthly" type="radio" name="weekly-monthly" value="Monthly" />Monthly</label>
+						<br />
+						<label for="past"><input id="past" type="checkbox" name="content" value="Past" />The Past</label>
+						<br />
+						<label for="present"><input id="present" type="checkbox" name="content" value="Present" checked style="color:black;"/>The Present - Where we are!</label>
+						<br /> 
+						<label for="future"><input id="future" type="checkbox" name="content" value="Future" />The Future - Exciting New Discoveries!</label>
+						<br />
+						<p class="content">Share more:</p>
+						<textarea class="content" rows = "5" cols = "60" name = "share" placeholder="Is there anything else you would like to share with us?" required></textarea>
+						<p class="content">Please share your email, if you would like to be contacted regarding your feedback:</p>
+						<input class="content" type="email" placeholder="johdoe@example.com" />
+						
+					</div>
+					
+					<br />
+					
+					<input type="submit" class="submitbutton" />
+					
+				</form>
+				
+				
+				<br />
+				<br />
+				<br />
+			
+			</section>
+				
+				
+<!--Email Button-->
+
+			<section>
+			
+				<p style="font-size: 16px; font-family: papyrus, fantasy;"><u>Please feel free to contact us through the following mediums!</u></p>
+				
+				<button class="button" style="text-decoration:none;"><a href="mailto:roaringtiger2000@gmail.com?subject=I%20am%20interested%20in%20Robotics.&body=Hello,%20I%20am%20excited%20to%20discover%20the%20incredible%20field%20of%20robotics.%20Please%20let%20me%20know%20if%20you%20have%20any%20suggestions%20to%20be%20involved%20in%20the%20technology%20community.%20Thanks!" style="text-decoration: none;">Send Us An Email!</a></button>
+				
+				<button class="button" style="text-decoration:none;"><a href="tel:7789303232" style="text-decoration:none;">Speak to us!</a></button>  
+				
+				<p class="goodbye" style="font-size: 36px;">Thank you for popping by!</p>
+				
+				<img class="closing" src="https://media1.giphy.com/media/lSsgFhD1q8rVDDHgI4/giphy.gif?cid=6c09b9521ead86099a765f235d6a36ed83397d32ec914a5e&rid=giphy.gif&ct=s" alt="Robot saying thank you" />
+				
+				<h4 class="see"><i>Au revoir!</i></h4>
+				<h5 class="see"><i>Au revoir!</i></h5>
+				<h6 class="see"><i><a href="https://www.collinsdictionary.com/dictionary/english-french">Au revoir!</a></i></h6>
+				
+				<br />
+				
+				<p class="copyright"><a href="#">©Zeyus Spenta - 2022 - Handsworth Secondary School, Computer Studies 10</a></p>
+				
+				<br />
+			
+			</section>
+    
+		</footer>
+		
+		
+		<script>
+		  function openNav() {
+			document.getElementById("mySidenav").style.width = "250px";
+		  }
+		  function closeNav() {
+			document.getElementById("mySidenav").style.width = "0";
+		  }
+		
+		</script> 
+    
+		<script src="script.js"></script>
+    
+	</body>
+    
+</html>

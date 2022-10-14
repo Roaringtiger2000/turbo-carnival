@@ -1,0 +1,116 @@
+body {
+	background-color: #1b0394;
+	font-family: 'Patrick Hand', cursive;
+	font-size: 20px;
+}
+
+form {
+	line-height: 27px;
+}
+
+h2 {
+	font-size: 20px;
+}
+
+input[type="text"], input[type="number"] {
+	min-height: 15px;
+	border-radius: 5px;
+	border:1px solid #cccccc;
+}
+
+input[type="radio"] {
+	margin-left: 12px;
+}
+
+#main {
+	background-color: #979fe8;
+	text-align: left;
+	height: 130vh;
+	border-radius: 15px;
+	margin: 2% 10%;
+	overflow: auto;
+	padding-left: 5px;
+}
+
+#story {
+	padding: 0 3%;
+}
+
+#top {
+	background-color: rgb(255, 255, 255);
+	margin: 2% 10%;
+	border-radius: 15px;
+}
+
+#top img {
+	display: block;
+	width: 43%;
+	margin: 0 auto;
+}
+
+.italics {
+	font-style: italic;
+}
+
+.word {
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+
+.words {
+	font-family: 'Comic Neue', cursive;
+	width: 35%;
+	font-size: 19px;
+}
+
+.submit {
+	border-radius: 0px;
+	background-color: #250dff;
+	padding-left: 0px;
+	border: none;
+	color: white;
+	width: 21%;
+	height: 35px;
+	margin-top: 10px;
+	font-size: 20px;
+	text-decoration: none;
+}
+
+.submit1 {
+	border-radius: 21px;
+	background-color: #1766e6;
+	padding-left: 0px;
+	border: none;
+	color: white;
+	width: 35%;
+	height: 35px;
+	margin-left: 55%; 
+	margin-top: 10px;
+	font-size: 20px;
+	text-decoration: none;
+}
+
+.submit:hover {
+	cursor:pointer;
+	width: 23%;
+}
+
+.map {
+	padding-top: 15px;
+	font-size: 35px;
+	color: blue;
+}
+
+.map1 {
+	padding-top: 15px;
+	font-size: 29px;
+	color: blue;
+}
+
+.intro {
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-size: 25px;
+	color: blue;
+}
